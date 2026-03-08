@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<title>CupSpot - Preporuke kafića u Kraljevu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CupSpot</h1>
+<p>Pronađi najbolji kafić u Kraljevu</p>
+</header>
+
+<h2>Pretraži kafiće</h2>
+
+<label>Tip kafića:</label>
+<select id="typeFilter">
+<option value="">Svi</option>
+<option value="mirni">Mirni kafići</option>
+<option value="moderni">Moderni kafići</option>
+<option value="basta">Kafići sa baštom</option>
+<option value="muzika">Kafići sa živom muzikom</option>
+<option value="kolaci">Kafići sa kolačima</option>
+</select>
+
+<label>Minimalna ocena:</label>
+<select id="ratingFilter">
+<option value="">Sve</option>
+<option value="3">3+</option>
+<option value="4">4+</option>
+<option value="4.5">4.5+</option>
+</select>
+
+<label>Lokacija:</label>
+<input type="text" id="locationFilter" placeholder="Unesi ulicu ili deo grada">
+
+<button onclick="filterCafes()">Filtriraj</button>
+
+<hr>
+
+<div id="cafeList"></div>
+
+
+
+<script src="script.js"></script>
+
+
+<div id="register-screen">
+
+<h2>Registracija</h2>
+
+<input type="email" id="email" placeholder="Unesite email">
+<input type="password" id="password" placeholder="Unesite lozinku">
+
+<button onclick="registerUser()">Registruj se</button>
+
+<p id="message"></p>
+
+</div>
+
+
+<div id="main-content" style="display:none;">
+
+
+
+
+</div>
+
