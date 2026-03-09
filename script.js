@@ -29,7 +29,7 @@ container.innerHTML += `
 <p>Lokacija: ${cafe.location}</p>
 <p>Ocena: ${cafe.rating}</p>
 <p>Radno vreme: ${cafe.hours}</p>
-<img src="${cafe.image}" alt="cafe.name" width="200" height="250">
+<img src="${cafe.image}" alt="${cafe.name}" width="200" height="250">
 <p>Tip: ${cafe.types.join(", ")}</p>
 <h4>Ostavi ocenu</h4>
 
@@ -55,14 +55,6 @@ showComments(cafe.name);
 
 showCafes(cafes);
 
-function searchCafe(){
-
-const input = document
-.getElementById("searchInput")
-.value
-.toLowerCase();
-
-}
 
 function registerUser(){
 

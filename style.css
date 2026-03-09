@@ -12,13 +12,6 @@ width:200px;
 }
 
 
-.cafes{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-}
-
 .cafe{
 background:white;
 padding:55px;
